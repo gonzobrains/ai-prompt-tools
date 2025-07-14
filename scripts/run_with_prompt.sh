@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$OPENAI_API_KEY" ]; then
-  echo "❌ Please set the OPENAI_API_KEY environment variable."
+  echo "Please set the OPENAI_API_KEY environment variable."
   exit 1
 fi
 

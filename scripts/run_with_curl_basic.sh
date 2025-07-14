@@ -2,7 +2,7 @@
 
 # Fail fast if no API key
 if [ -z "$OPENAI_API_KEY" ]; then
-  echo "❌ Please set the OPENAI_API_KEY environment variable."
+  echo "Please set the OPENAI_API_KEY environment variable."
   exit 1
 fi
 

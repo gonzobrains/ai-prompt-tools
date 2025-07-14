@@ -4,7 +4,7 @@ import requests
 
 API_KEY = os.getenv("OPENAI_API_KEY")
 if not API_KEY:
-    print("❌ Please set the OPENAI_API_KEY environment variable.")
+    print("Please set the OPENAI_API_KEY environment variable.")
     sys.exit(1)
 
 if len(sys.argv) < 2:
@@ -31,4 +31,4 @@ data = response.json()
 try:
     print(data['choices'][0]['message']['content'].strip())
 except KeyError:
-    print("❌ Unexpected response:", data)
+    print("Unexpected response:", data)

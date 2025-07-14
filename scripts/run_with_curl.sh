@@ -2,7 +2,7 @@
 
 # Load API key from environment
 if [ -z "$OPENAI_API_KEY" ]; then
-  echo "❌ Error: Please set the OPENAI_API_KEY environment variable."
+  echo "Error: Please set the OPENAI_API_KEY environment variable."
   exit 1
 fi
 
